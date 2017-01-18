@@ -1,4 +1,3 @@
-// incluir livraria para o LCD:
 #include <LiquidCrystal.h>
  
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
@@ -49,7 +48,7 @@ byte j3[8] = {
   B11100,
   B00000
 };
- ///////////////////////////////
+
 byte u0[8] = {
   B00000,
   B01100,
@@ -93,7 +92,7 @@ byte u3[8] = {
   B11000,
   B00000
 };
-///////////////////////////////
+
 byte l0[8] = {
   B00000,
   B01110,
@@ -137,7 +136,7 @@ byte l3[8] = {
   B11110,
   B00000
 };
-////////////////////////
+
 byte i0[8] = {
   B00000,
   B01111,
@@ -182,7 +181,7 @@ byte i3[8] = {
   B00000
 };
 
-///////////////////////////
+
 byte o0[8] = {
   B00000,
   B00111,
@@ -227,7 +226,7 @@ byte o3[8] = {
   B00000
 };
 
-///////////////////////////////
+
  
 void setup() {
 
@@ -241,9 +240,9 @@ lcd.createChar(2, j1);
 lcd.createChar(3, j2);
 lcd.createChar(4, j3);
 
-lcd.setCursor(3, 0); //aponta para coluna 0, linha 0
-lcd.write(1); //escreve o
-lcd.setCursor(4, 0); //aponta para coluna 2, linha 0
+lcd.setCursor(3, 0); 
+lcd.write(1); 
+lcd.setCursor(4, 0); //aponta para coluna 4, linha 0
 lcd.write(2);
 lcd.setCursor(3, 1);
 lcd.write(3);
@@ -251,13 +250,13 @@ lcd.setCursor(4, 1);
 lcd.write(4);
 delay(500);
 lcd.clear();
-///////////////
+
 lcd.createChar(5, u0);
 lcd.createChar(6, u1);
 lcd.createChar(7, u2);
 lcd.createChar(8, u3);
 
-lcd.setCursor(5, 0);//aponta para coluna 2, linha 0
+lcd.setCursor(5, 0);
 lcd.write(5);
 lcd.setCursor(6, 0);
 lcd.write(6);
@@ -268,13 +267,13 @@ lcd.write(8);
 delay(500);
 lcd.clear();
 
-  ///////////////////////
+  
 lcd.createChar(1, l0);
 lcd.createChar(2, l1);
 lcd.createChar(3, l2);
 lcd.createChar(4, l3);
 
-lcd.setCursor(7, 0);//aponta para coluna 2, linha 0
+lcd.setCursor(7, 0);
 lcd.write(1);
 lcd.setCursor(8, 0);
 lcd.write(2);
@@ -284,14 +283,14 @@ lcd.setCursor(8, 1);
 lcd.write(4);
 delay(500);
 lcd.clear();
-  //////////////////////////
+  
 
 lcd.createChar(5, i0);
 lcd.createChar(6, i1);
 lcd.createChar(7, i2);
 lcd.createChar(8, i3);
 
-lcd.setCursor(9, 0);//aponta para coluna 2, linha 0
+lcd.setCursor(9, 0);
 lcd.write(5);
 lcd.setCursor(10, 0);
 lcd.write(6);
@@ -301,13 +300,13 @@ lcd.setCursor(10, 1);
 lcd.write(8);
 delay(500);
 lcd.clear();
-  ///////////////////////////
+  
 lcd.createChar(1, o0);
 lcd.createChar(2, o1);
 lcd.createChar(3, o2);
 lcd.createChar(4, o3);
 
-lcd.setCursor(11, 0);//aponta para coluna 2, linha 0
+lcd.setCursor(11, 0);
 lcd.write(1);
 lcd.setCursor(12, 0);
 lcd.write(2);
